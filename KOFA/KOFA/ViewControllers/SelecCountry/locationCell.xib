@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="locationCell" customModule="KOFA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdr-TV-Z2Q">
+                        <rect key="frame" x="8" y="13.5" width="280" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="0xk-Xb-xf7">
+                        <rect key="frame" x="292" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="90m-NF-Dtd"/>
+                            <constraint firstAttribute="width" constant="20" id="MDM-wX-nas"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIW-dQ-bj3">
+                        <rect key="frame" x="8" y="42.5" width="280" height="1"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rhP-8K-39P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pdr-TV-Z2Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="27c-8S-MVs"/>
+                    <constraint firstItem="Pdr-TV-Z2Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gs9-sf-QNc"/>
+                    <constraint firstAttribute="trailing" secondItem="0xk-Xb-xf7" secondAttribute="trailing" constant="8" id="LJj-49-Huc"/>
+                    <constraint firstItem="kIW-dQ-bj3" firstAttribute="width" secondItem="Pdr-TV-Z2Q" secondAttribute="width" id="LyL-OB-15C"/>
+                    <constraint firstItem="0xk-Xb-xf7" firstAttribute="leading" secondItem="Pdr-TV-Z2Q" secondAttribute="trailing" constant="4" id="Qd5-oD-lWx"/>
+                    <constraint firstItem="0xk-Xb-xf7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zti-MZ-QqG"/>
+                    <constraint firstAttribute="bottom" secondItem="kIW-dQ-bj3" secondAttribute="bottom" id="iNL-OU-aBL"/>
+                    <constraint firstItem="kIW-dQ-bj3" firstAttribute="centerX" secondItem="Pdr-TV-Z2Q" secondAttribute="centerX" id="r9u-9h-7RM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCheck" destination="0xk-Xb-xf7" id="cIr-g6-IaP"/>
+                <outlet property="lblContent" destination="Pdr-TV-Z2Q" id="iL3-4m-zSt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_unchecked" width="24" height="24"/>
+    </resources>
+</document>

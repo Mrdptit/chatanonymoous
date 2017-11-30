@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'KOFA' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Socket.IO-Client-Swift'
+  pod 'Alamofire'
+  pod 'AFNetworking', '~> 3.1'
+  pod 'SlideMenuControllerSwift'
+  # Pods for KOFA
+  pod 'EAIntroView'
+  pod 'SwiftyJSON'
+  pod 'AlamofireImage'
+  pod 'SDWebImage'
+  pod 'Material'
+  pod 'SVProgressHUD'
+  #facebook
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  #UI
+  pod 'FTPopOverMenu_Swift'
+  pod 'TTRangeSlider'
+  pod 'FCAlertView'
+  pod 'RNNotificationView'
+
+  #inapp
+  pod 'RMStore'
+end

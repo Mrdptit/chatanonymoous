@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  KOFA
+
+  Created by may1 on 11/24/17.
+  Copyright © 2017 smartconnect. All rights reserved.
+*/
+"srt_purche"                   =    "You want to change the object to gender: %@ \n Have an age of %d to %d \n distance %d to %d you need %d point";
+"srt_OK"                       =    "Ok";
+"srt_defaul_search"            =    "Search Defaul";
+// gender
+"srt_all"                      =    "All";
+"srt_male"                     =    "Male";
+"srt_female"                   =    "Female";

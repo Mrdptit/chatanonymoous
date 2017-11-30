@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationCountyVC" customModule="KOFA" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="iD6-lH-c0L" id="30l-6F-4t1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTf-4r-jhm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iD6-lH-c0L">
+                    <rect key="frame" x="46.5" y="116" width="281" height="434"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iD6-lH-c0L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7KO-eC-3tZ"/>
+                <constraint firstItem="kTf-4r-jhm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="F1z-1t-IUe"/>
+                <constraint firstItem="kTf-4r-jhm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="FRt-xt-GOx"/>
+                <constraint firstItem="iD6-lH-c0L" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.65" id="JUN-dV-JHG"/>
+                <constraint firstItem="kTf-4r-jhm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RkB-36-Whb"/>
+                <constraint firstItem="iD6-lH-c0L" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jYi-IL-F0s"/>
+                <constraint firstItem="kTf-4r-jhm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="rAf-5U-iMF"/>
+                <constraint firstItem="iD6-lH-c0L" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="sAo-w0-NdU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
